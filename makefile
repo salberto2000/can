@@ -5,13 +5,13 @@
 # See /LICENSE for more information.
 #
 
-#include $(TOPDIR)/rules.mk
-#include $(INCLUDE_DIR)/kernel.mk
+include $(TOPDIR)/rules.mk
+include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=mcp2515-banged
 PKG_RELEASE:=1
 
-#include $(INCLUDE_DIR)/package.mk
+include $(INCLUDE_DIR)/package.mk
 
 define KernelPackage/mcp2515-banged
   SUBMENU:=CAN Support
